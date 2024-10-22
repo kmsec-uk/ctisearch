@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ctisearch"
+
+version = "0.0.3"
+
+authors = [
+  { name="kmsec-uk", email="kmsec-uk@proton.me" },
+]
+
+description = "A broadly common async interface for Shodan, URLScan, and VirusTotal"
+
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+dependencies = [
+    "vt-py==0.18.4",
+    "aiohttp==3.10.8"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kmsec-uk/ctisearch"
+Issues = "https://github.com/kmsec-uk/ctisearch/issues"
